@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Login Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="panel">
+        <h1>Secure Login Demo</h1>
+
+        <form id="loginForm" novalidate>
+          <h2>Login</h2>
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" name="email" type="email" placeholder="user@example.com" />
+
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" name="password" type="password" placeholder="At least 8 characters" />
+
+          <button type="submit">Login</button>
+          <p id="loginError" class="error" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="panel">
+        <form id="registerForm" novalidate>
+          <h2>Register</h2>
+          <label for="registerEmail">Email</label>
+          <input id="registerEmail" name="email" type="email" placeholder="newuser@example.com" />
+
+          <label for="registerPassword">Password</label>
+          <input id="registerPassword" name="password" type="password" placeholder="Minimum 8 characters" />
+
+          <label for="registerRole">Role</label>
+          <input id="registerRole" name="role" type="text" value="user" placeholder="user" />
+
+          <button type="submit">Create Account</button>
+          <p id="registerError" class="error" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Product Search</h2>
+        <form id="searchForm">
+          <label for="searchQuery">Search products</label>
+          <input id="searchQuery" type="text" placeholder="Try: <script>alert(1)</script>" />
+          <button type="submit">Search</button>
+        </form>
+        <ul id="searchResults" class="results"></ul>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

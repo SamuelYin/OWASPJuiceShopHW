@@ -1,0 +1,13 @@
+{
+  "name": "secure-demo-fixes",
+  "version": "1.0.0",
+  "description": "Demo app showing fixes for SQL injection, insecure admin registration, and XSS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
